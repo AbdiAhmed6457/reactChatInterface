@@ -37,6 +37,7 @@ export default function Sidebar() {
                    <HelpOutlineIcon className="sidebarIcon"/>
                    <span className="sidebarListItemText" >Questions</span>
                 </li>
+                
                 <li className="sidebarListItem">
                    <WorkOutlineIcon className="sidebarIcon"/>
                    <span className="sidebarListItemText" >Jobs</span>
@@ -53,6 +54,22 @@ export default function Sidebar() {
             <button className="sidebarButton">Show More</button>
             <hr className="sidbarHr"/>
             <ul className="sidebarFriendList">
+               <li className="sidebarFriend">
+                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
+                <span className="sidebarFriendName"> Hamza Jhad</span>
+               </li>
+               <li className="sidebarFriend">
+                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
+                <span className="sidebarFriendName"> Hamza Jhad</span>
+               </li>
+               <li className="sidebarFriend">
+                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
+                <span className="sidebarFriendName"> Hamza Jhad</span>
+               </li>
+               <li className="sidebarFriend">
+                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
+                <span className="sidebarFriendName"> Hamza Jhad</span>
+               </li>
                <li className="sidebarFriend">
                 <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
                 <span className="sidebarFriendName"> Hamza Jhad</span>
