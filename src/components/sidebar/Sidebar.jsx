@@ -6,7 +6,8 @@ import GroupIcon from '@material-ui/icons/Group';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';import WorkOutlineIcon from '@material-ui/icons/WorkOutline';import EventIcon from '@material-ui/icons/Event';
 import SchoolIcon from '@material-ui/icons/School';
-
+import { Users } from "../../dummyData";
+import CloseFriends from "./closeFriends/CloseFriends";
 
 export default function Sidebar() {
   return (
@@ -54,50 +55,10 @@ export default function Sidebar() {
             <button className="sidebarButton">Show More</button>
             <hr className="sidbarHr"/>
             <ul className="sidebarFriendList">
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
-               <li className="sidebarFriend">
-                <img src="/assets/person/2.jpeg" className="sidebarFriendImg" alt="" />
-                <span className="sidebarFriendName"> Hamza Jhad</span>
-               </li>
+               {Users.map((u) => (
+                 <CloseFriends key = {u.id} user = {u} />
+               ))}
+                                          
             </ul>
         </div>
     </div>
